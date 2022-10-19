@@ -33,9 +33,16 @@ psedo_labels = clustering_model.fit_predict(features)
 
 ### Benchmark
 
-Tested on colab
+Tested on colab (Tesla T4)
 
-...
+| CIFAR-10                | NMI    | ACC    | Speed       |
+|-------------------------|--------|--------|-------------|
+| Faiss kmeans (nredo 5 maxiter 50)            | 0.8551 | 0.9236 | 0.73+-0.09  |
+| torch_clustering kmeans (nredo 10 maxiter 300) | 0.8552 | 0.9235 | 4.59+-0.05  |
+| torch_clustering GMM (nredo 10x10 maxiter 300)   | 0.8559 | 0.9238 | 11.67+-0.33 |
+
+On ImageNet, the performance of torch_clustering will be much better Faiss.
+
 
 ### Citation
 
