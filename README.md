@@ -47,12 +47,10 @@ On ImageNet, the performance of torch_clustering will be much better Faiss.
 ### Citation
 
 ```
-@misc{huang2022learning,
-    title={Learning Representation for Clustering via Prototype Scattering and Positive Sampling},
-    author={Zhizhong Huang and Jie Chen and Junping Zhang and Hongming Shan},
-    year={2021},
-    eprint={2111.11821},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@article{huang2022learning,
+  title={Learning Representation for Clustering via Prototype Scattering and Positive Sampling},
+  author={Zhizhong Huang and Jie Chen and Junping Zhang and Hongming Shan},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2022},
 }
 ```
